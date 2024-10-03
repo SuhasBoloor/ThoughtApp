@@ -15,7 +15,7 @@ export default function Nav() {
     setupProvidrers();
   }, []);
   return (
-    <nav className="bg-black text-white flex p-4">
+    <nav className="bg-black text-white flex items-center justify-between p-4">
       <Link href="/">
         <Image
           src="/assets/ThoughtsLogo.png"
@@ -28,16 +28,16 @@ export default function Nav() {
       </Link>
       <div className="sm:flex hidden">
         {isLoggedIn ? (
-          <div className="">
+          <div className="flex  items-center justify-center">
             <Link href="/create-prompt" className="black-btn">
               Create Post
             </Link>
-            <button type="button" onClick={signOut} className="black-btn">
+            <button type="button" onClick={signOut} className="outlined-btn">
               Sign Out
             </button>
             <Link href="/profile">
               <Image
-                src="/assests/ThoughtsLogo.png"
+                src="/assets/ThoughtsLogo.png"
                 alt="profile"
                 width={30}
                 height={30}
@@ -53,7 +53,7 @@ export default function Nav() {
                     type="button"
                     key={provider.name}
                     onClick={() => signIn(provider.id)}
-                    className=""
+                    className="black-btn"
                   >
                     Sign In
                   </button>
@@ -62,10 +62,10 @@ export default function Nav() {
           </>
         )}
       </div>
-      <div>
+      <div className="sm:hidden flex">
         {isLoggedIn ? (
           <Image
-            src="/assests/ThoughtsLogo.png"
+            src="/assets/ThoughtsLogo.png"
             alt="profile"
             width={30}
             height={30}
@@ -79,7 +79,7 @@ export default function Nav() {
                     type="button"
                     key={provider.name}
                     onClick={() => signIn(provider.id)}
-                    className=""
+                    className="black-btn"
                   >
                     Sign In
                   </button>

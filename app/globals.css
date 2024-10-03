@@ -3,7 +3,25 @@
 @tailwind utilities;
 
 .black-btn {
-  padding: 2vh;
+  padding: 1vh 1.8vh;
   background-color: aqua;
   color: black;
+  border: none;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+.outlined-btn {
+  padding: 0.9vh 1.8vh;
+  background-color: aqua;
+  color: black;
+  border: none;
+  border-radius: 15px;
+  margin-right: 10px;
+
+}
+
+.black-btn:hover, .outlined-btn:hover{
+  background-color: grey;
+  color: aqua;
 }
