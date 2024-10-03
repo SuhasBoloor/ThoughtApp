@@ -41,6 +41,7 @@ export default function Nav() {
                 alt="profile"
                 width={30}
                 height={30}
+                className="rounded-full"
               />
             </Link>
           </div>
@@ -69,6 +70,7 @@ export default function Nav() {
             alt="profile"
             width={30}
             height={30}
+            className="rounded-full"
           />
         ) : (
           <>
