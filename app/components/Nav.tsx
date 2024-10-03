@@ -7,7 +7,7 @@ export default function Nav() {
   return (
     <nav className="">
       <Link href="/">
-        <Image src="" alt="Logo"
+        <Image src="" alt="Logo" width={30} height={30}/>
       </Link>
     </nav>
   );
