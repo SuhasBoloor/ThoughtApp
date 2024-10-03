@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.black-btn {
+  padding: 2vh;
+  background-color: aqua;
+  color: black;
+}
