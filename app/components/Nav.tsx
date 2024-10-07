@@ -29,7 +29,7 @@ export default function Nav() {
       <div className="sm:flex hidden">
         {isLoggedIn ? (
           <div className="flex  items-center justify-center">
-            <Link href="/create-prompt" className="black-btn">
+            <Link href="/create-thought" className="black-btn">
               Create Post
             </Link>
             <button type="button" onClick={signOut} className="outlined-btn">
@@ -50,14 +50,15 @@ export default function Nav() {
             {providers &&
               Object.values(providers).map((provider) => {
                 return (
-                  <button
-                    type="button"
-                    key={provider.name}
-                    onClick={() => signIn(provider.id)}
-                    className="black-btn"
-                  >
-                    Sign In
-                  </button>
+                  // <button
+                  //   type="button"
+                  //   key={provider.name}
+                  //   onClick={() => signIn(provider.id)}
+                  //   className="black-btn"
+                  // >
+                  //   Sign In
+                  // </button>
+                  <p>sugnout</p>
                 );
               })}
           </>
@@ -77,14 +78,15 @@ export default function Nav() {
             {providers &&
               Object.values(providers).map((provider) => {
                 return (
-                  <button
-                    type="button"
-                    key={provider.name}
-                    onClick={() => signIn(provider.id)}
-                    className="black-btn"
-                  >
-                    Sign In
-                  </button>
+                  // <button
+                  //   type="button"
+                  //   key={provider.name}
+                  //   onClick={() => signIn(provider.id)}
+                  //   className="black-btn"
+                  // >
+                  //   Sign In
+                  // </button>
+                  <p>sugnout</p>
                 );
               })}
           </>

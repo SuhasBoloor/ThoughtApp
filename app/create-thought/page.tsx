@@ -1,8 +1,8 @@
 export default function CreateThought() {
   return (
-    <>
-      <p>There will be a form her</p>
-      <h2>Coming Soon...</h2>
-    </>
+    <div>
+      <h1>Create a Thought</h1>
+      <p>Comming sooooon.....</p>
+    </div>
   );
 }
