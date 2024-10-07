@@ -1,3 +1,7 @@
 export default function Footer() {
-  return <h1>hi</h1>;
+  return (
+    <p className="w-full text-center bg-black text-white">
+      A Next JS peoject by Suhas Boloor
+    </p>
+  );
 }
